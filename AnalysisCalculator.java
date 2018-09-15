@@ -13,6 +13,7 @@ public class AnalysisCalculator {
 		System.out.println("4):100,000-200,000");
 		System.out.println("5):<200,000+");
 		int income = sc.nextInt();
+		try {
 		switch(income)
 		{
 		case 0:
@@ -23,6 +24,10 @@ public class AnalysisCalculator {
 			
 		case 3:
 		
+		}
+		}
+		catch(NumberFormatException e) {
+			System.out.println("Please enter a valid option");
 		}
 		
 		
